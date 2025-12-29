@@ -11,18 +11,38 @@ The goal of this project is to demonstrate a clear understanding of:
 - Hidden layer: 10 neurons with ReLU activation
 - Output layer: 10 neurons with Softmax activation (digits 0–9)
 # Key Components Implemented
-He initialization for weights
-ReLU activation and derivative
-Softmax output layer
-Cross-entropy loss (via softmax gradient)
-Backpropagation
-Gradient descent parameter updates
-Accuracy evaluation
+- He initialization for weights
+- ReLU activation and derivative
+- Softmax output layer
+- Cross-entropy loss (via softmax gradient)
+- Backpropagation
+- Gradient descent parameter updates
+- Accuracy evaluation
 
 # Dependencies
 This project only requires the following Python libraries:
-`pip install numpy matplotlib´
+\\
+`pip install numpy matplotlib`
 
 # MNIST Dataset Setup
-Included in the repo there is a file called `mnist_datareader.py` using this you can simply download the dataset from https://www.kaggle.com/datasets/hojjatk/mnist-dataset and and these files in a folder called input. The mnist_datareader is imported in the main file and will read the dataset.
+Included in the repo there is a file called `mnist_datareader.py` using this you can simply download the dataset from https://www.kaggle.com/datasets/hojjatk/mnist-dataset and add these files in a folder called input. The mnist_datareader is imported in the main file and will read the dataset.
+
+# Results
+
+With proper tuning, this model typically achieves:
+\\
+~85–90% accuracy on the MNIST test set (depending on learning rate and iterations)
+
+# Learning Outcomes
+This project reinforces:
+- How neural networks work internally
+- How gradients are computed and applied
+- Why activation functions matter
+- How softmax enables multi-class classification
+
+# Future Improvements
+- Add more hidden layers
+- Implement mini-batch gradient descent
+- Add loss tracking and visualization
+- Implement regularization techniques
 
